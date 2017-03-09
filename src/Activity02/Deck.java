@@ -73,7 +73,12 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public Card deal() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		size--;
+                if(size != 0) {
+                    Card x = cards.get(size);
+                    return x;
+                }
+                return null;
 	}
 
 	/**
